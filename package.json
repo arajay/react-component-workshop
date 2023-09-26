@@ -1,0 +1,76 @@
+{
+  "name": "mui-starter",
+  "version": "0.3.1",
+  "description": "React library starter template preconfigured for MUI components, with ThemeProvider, Typescript, Jest and Storybook",
+  "author": "RJ Greenhalge",
+  "license": "MIT",
+  "homepage": "https://github.com/arajay/mui-starter#readme",
+  "bugs": {
+    "url": "https://github.com/arajay/mui-starter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arajay/mui-starter.git"
+  },
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "storybook dev -p 6006",
+    "build": "rm -rf ./dist && webpack --mode=production",
+    "test": "jest",
+    "lint": "npx eslint --fix src/",
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.23.0",
+    "@storybook/addon-actions": "^7.4.5",
+    "@storybook/addon-essentials": "^7.4.5",
+    "@storybook/addon-interactions": "^7.4.5",
+    "@storybook/addon-links": "^7.4.5",
+    "@storybook/blocks": "^7.4.5",
+    "@storybook/react": "^7.4.5",
+    "@storybook/react-webpack5": "^7.4.5",
+    "@storybook/testing-library": "^0.0.14-next.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@types/jest": "^28.1.8",
+    "@types/react": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "babel-loader": "^8.3.0",
+    "babel-plugin-direct-import": "^1.0.0",
+    "eslint": "^8.50.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.14",
+    "eslint-webpack-plugin": "^3.2.0",
+    "fork-ts-checker-webpack-plugin": "^7.3.0",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "storybook": "^7.4.5",
+    "ts-jest": "^28.0.8",
+    "ts-loader": "^9.4.4",
+    "typescript": "^4.9.5",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^4.10.0"
+  },
+  "overrides": {
+    "@storybook/react-docgen-typescript-plugin": "npm:react-docgen-typescript-plugin@1.0.2"
+  }
+}
