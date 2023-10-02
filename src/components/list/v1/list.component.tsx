@@ -6,12 +6,10 @@ export interface MyProps {
 
 export const ListComponent = ({ list }: PropsWithChildren<MyProps>) => {
   return (
-    <>
-      <ul>
-        {list.map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>
-    </>
+    <ul>
+      {list.map((item, i) => (
+        <li key={i}>{item}</li>
+      ))}
+    </ul>
   )
 }
