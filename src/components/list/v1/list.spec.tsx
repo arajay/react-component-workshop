@@ -22,13 +22,22 @@ describe('The ExampleComponent', () => {
   })
 
   describe('ListComponent', () => {
+
     it('should render a list element', () => {})
+
     it('should include a control to switch between list types', () => {})
+
     it('should be able support icons as bullets', () => { })
+
     it('should support hyperlinks in the text', () => { })
+
     it('should support nested lists', () => { })
+
     it('should support different text styling for list content', () => { })
+
     it('should support different colors for bullet and text', () => { })
+
     it('should have an unstyled option', () => { })
+
   })
 })
